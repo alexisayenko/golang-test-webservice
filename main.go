@@ -15,7 +15,7 @@ func main() {
 		fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
 	})
 
-	http.ListenAndServe(":8011", nil)
+	http.ListenAndServe(":80", nil)
 
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := reader.ReadString('\n')
